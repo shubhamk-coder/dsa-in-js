@@ -10,6 +10,7 @@ const isPalindrome = function (x) {
   const str = x.toString();
   const reversedStr = str.split("").reverse().join("");
   return str === reversedStr;
+  // return x < 0 ? false : x === +x.toString().split("").reverse().join("");
 };
 //? Time Complexity: O(n) - We convert the number to a string and reverse it, which takes O(n) time where n is the number of digits in the number.
 //? Space Complexity: O(n) - We use additional space to store the string representation of the number and its reversed version.
